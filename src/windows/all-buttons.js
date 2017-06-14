@@ -19,7 +19,7 @@ export default class AllButtons extends React.Component {
                     <Button
                         type="dialogDefault"
                         text="dialog Default"
-                        style={[StyleSheet.singleMargin]}
+                        style={[StyleSheet.singleMargin, {backgroundColor: 'blue'}]}
                         onPress={()=>alert('Button Pressed')}
                     />
                     <Button
@@ -102,10 +102,6 @@ export default class AllButtons extends React.Component {
                         style={[StyleSheet.singleMargin]}
                         onPress={()=>alert('Button Pressed')}
                     />
-
-
-
-
 
                     <Button
                         type="profileActivity"
@@ -195,6 +191,66 @@ export default class AllButtons extends React.Component {
                         onPress={()=>alert('Button Pressed')}
                     />                  
 
+                    <Button
+                        type="dialogGreen"
+                        text="dialogGreen"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+
+                    <Button
+                        type="top"
+                        text="top"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+                    <Button
+                        type="profile"
+                        text="profile"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+
+                    <Button
+                        type="profileDefault"
+                        text="profileDefault"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+
+                    <Button
+                        type="listItem"
+                        text="listItem"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+
+                    <Button
+                        type="preference"
+                        text="preference"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+                    <Button
+                        type="preferenceCheck"
+                        text="preferenceCheck"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+
+                    <Button
+                        type="preferenceLink"
+                        text="preferenceLink"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
+
+                    <Button
+                        type="preferenceHighlightLink"
+                        text="preferenceHighlightLink"
+                        style={[StyleSheet.singleMargin]}
+                        onPress={()=>alert('Button Pressed')}
+                    />
                 </ScrollView>
             </View>
     )}
