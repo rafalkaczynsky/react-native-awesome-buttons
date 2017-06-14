@@ -17,8 +17,8 @@ export default class AllButtons extends React.Component {
             <View style={{flex: 1, padding: 20,}}>
                 <ScrollView>
                     <Button
-                        type="roundedDefault"
-                        text="rounded Default"
+                        type="dialogDefault"
+                        text="dialog Default"
                         style={[StyleSheet.singleMargin]}
                         onPress={()=>alert('Button Pressed')}
                     />

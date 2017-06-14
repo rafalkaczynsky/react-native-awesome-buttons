@@ -9,6 +9,11 @@ export default StyleSheet => StyleSheet.extend({
     justifyContent: 'center',
   },
 
+  okPopup: {
+    backgroundColor: colors.pink,
+    color: colors.white,
+  },
+
   separator: {
     marginTop: 10,
     marginBottom: 10,
@@ -57,151 +62,54 @@ export default StyleSheet => StyleSheet.extend({
     textTransform: s => s.toUpperCase()
   }),
 
-  rounded: StyleSheet.extend({
-    underlayColor: colors.highlightBlack,
-
-    style: {
-      borderRadius: 22,
-      flex: 0
-    },
-
-    containerStyle: {
-      height: 44
-    }
-  }),
-
-  roundedDefault: StyleSheet.extend({
-    underlayColor: colors.highlightPink,
-
-    style: {
-      backgroundColor: colors.green,
-      borderRadius: 22,
-      flex: 0
-    },
-
-    containerStyle: {
-      height: 44
-    }
-  }),
-
-  title: StyleSheet.extend({
+  tab: StyleSheet.extend({
+    activeOpacity: 1.0,
     underlayColor: colors.transparent,
 
     style: {
-      alignSelf: 'flex-start',
-      backgroundColor: colors.transparent,
-      flex: 0,
-      width: null,
-      height: null,
-      paddingTop: 14,
-      paddingBottom: 10,
-      paddingLeft: 5,
-      paddingRight: 5
-    }
-  }),
+      flex: 1,
+      backgroundColor: colors.transparent
+    },
 
-  modeSwitch: StyleSheet.extend({
-    underlayColor: colors.highlightPink,
+    containerStyle: {
+      flexDirection: 'column',
+    },
 
-    style: {
-      borderRadius: 14,
-      backgroundColor: colors.blue,
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: 24,
-      width: Platform.OS === 'ios' ? 145 : 155,
-      flex: 0,
-      paddingBottom: Platform.OS === 'ios' ? 0 : 2,
-      paddingTop:  Platform.OS === 'ios' ? 2 : 0,
+    iconStyle: {
+
     },
 
     textStyle: {
       letterSpacing: 0,
-    }
-
-  }),
-
-  headerAction: StyleSheet.extend({
-    underlayColor: colors.grey,
-
-    style: {
-      position: 'absolute',
-      top: -14,
-      right: 15.5,
-      width: 28,
-      height: 28,
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-  }),
-
-  headerActionCircle: StyleSheet.extend({
-    underlayColor: colors.grey,
-
-    style: {
-      position: 'absolute',
-      top: -14,
-      right: 15.5,
-      width: 28,
-      height: 28,
-      borderRadius: 14,
-      borderColor: colors.white,
-      borderWidth: 1,
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-  }),
-
-  alertDefault: StyleSheet.extend({
-    underlayColor: colors.lightGrey,
-
-    style: {
-      backgroundColor: colors.transparent,
-      borderStyle: 'solid',
-      borderTopWidth: StyleSheet.hairlineWidth,
-      borderTopColor: colors.grey,
-      height: 45
-    },
-
-    textStyle: {
-      fontSize: 13,
-      fontWeight: 'bold',
-      color: colors.pink,
-    }
-  }),
-
-  listItem: StyleSheet.extend({
-    underlayColor: colors.lightGrey,
-
-    style: {
-      backgroundColor: colors.transparent,
-      flex: 0,
-      paddingLeft: 20,
-      paddingRight: 20,
-      paddingTop: 20,
-      paddingBottom: 20,
-      marginLeft: 0,
-      marginRight: 0,
-      marginTop: 0,
-      marginBottom: 0,
-      alignItems: 'center',
-      justifyContent: 'flex-start',
-      flexDirection: 'row',
-
-      borderStyle: 'solid',
-      borderBottomWidth: StyleSheet.hairlineWidth,
-      borderColor: colors.grey,
-      borderRadius: 0,
-      height: 50
-    },
-
-    textStyle: {
-      color: colors.black,
+      fontSize: Dimensions.get('window').width > 350 ? 12 : 11,
       fontWeight: '400',
-      letterSpacing: 0,
-      fontSize: 16,
+      lineHeight: 15,
+      color: colors.grey
+    },
+
+    activeTextStyle: {
+      color: colors.pink
     },
 
     textTransform: s => s
   }),
+  dialog: StyleSheet.extend({
+    containerStyle: {
+      height: 50
+    }
+  }),
+
+  dialogDefault: StyleSheet.extend({
+    underlayColor: colors.highlightPink,
+
+    style: {
+      backgroundColor: colors.pink,
+    },
+
+    containerStyle: {
+      height: 50
+    },
+
+  }),
+
 })
