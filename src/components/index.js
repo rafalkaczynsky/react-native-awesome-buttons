@@ -1,2 +1,2 @@
-export {default as Button} from './button.js'
-export {default as Icon} from './icon.js'
+export {default as Button} from './button'
+export {default as Icon} from './icon'

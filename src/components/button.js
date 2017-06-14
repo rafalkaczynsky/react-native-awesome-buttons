@@ -1,21 +1,20 @@
 import React from 'react'
 import {View, Text, TouchableHighlight} from 'react-native'
 
-import  * as buttonStyles from '../styles/button'
-
+import StyleSheet from '../styles'
 import Icon from './icon'
 
 export default class Button extends React.Component {
 
   render() {
     const {
-      type, icon, active, text, style, activeStyle, containerStyle,
+      type, active, text, style, activeStyle, containerStyle,
       iconStyle, activeIconStyle, textStyle, activeTextStyle, children, ...props
     } = this.props
 
-    const defaultButton = buttonStyles.default || {}
-    const button = type ? buttonStyles[type] || defaultButton : defaultButton
-    const textTransform = buttonStyles.textTransform || defaultButton.textTransform || (s => s)
+    const defaultButton = StyleSheet.buttons.default || {}
+    const button = type ? StyleSheet.buttons[type] || defaultButton : defaultButton
+    const textTransform = button.textTransform || defaultButton.textTransform || (s => s)
 
     return (
       <TouchableHighlight style={[{flex: 0, overflow: 'visible'},
@@ -31,20 +30,8 @@ export default class Button extends React.Component {
         {...props}>
 
         <View style={[defaultButton.containerStyle, button.containerStyle, containerStyle]}>
-          {icon &&
-            <View style={[
-              defaultButton.iconStyle,
-              button.iconStyle,
-              iconStyle,
-              active ? defaultButton.activeIconStyle : null,
-              active ? button.activeIconStyle : null,
-              active ? activeIconStyle : null
-            ]}>
-              <Icon name={icon} active={active}/>
-            </View>
-          }
           {text && <Text style={[
-            button.text,
+            StyleSheet.text,
             defaultButton.textStyle,
             button.textStyle,
             textStyle,
@@ -60,4 +47,3 @@ export default class Button extends React.Component {
     )
   }
 }
-
