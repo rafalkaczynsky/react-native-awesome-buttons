@@ -334,7 +334,7 @@ export default StyleSheet => StyleSheet.extend({
     },
   }),
 
-  addActivity:  StyleSheet.extend({
+  add:  StyleSheet.extend({
     underlayColor: colors.lightGrey,
 
     style: {
