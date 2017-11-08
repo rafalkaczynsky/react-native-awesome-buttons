@@ -1,8 +1,8 @@
 # react-native-awesome-buttons
 Button component  build with React-Native
 
-![alt text](https://github.com/rafalkaczynsky/react-native-awesome-buttons/screen-one.png)
-![alt text](https://github.com/rafalkaczynsky/react-native-awesome-buttons/screen-two.png)
+![alt text](https://github.com/rafalkaczynsky/react-native-awesome-buttons/blob/master/screen-one.png)
+![alt text](https://github.com/rafalkaczynsky/react-native-awesome-buttons/blob/master/screen-two.png)
 
 (It's just an example what you can achieve with react-native)
 
