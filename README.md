@@ -6,7 +6,7 @@ Button component  build with React-Native
 
 (It's just an example what you can achieve with react-native)
 
-This reusable react-native component could be used in any App with payment options.
+This reusable react-native component could be used in any App where buttons needed :).
 
 How to run it locally from command line
 
